@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="clock-page">
+            <button id="changeBgBtn">Change</button>
+            <h2 id="clock">00:00:00</h2>
+        </div>
+        <div class="greeting-page">
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="todo-page">
+            <form id="todo-form">
+                <input id="todo-input" type="text" placeholder="Write your to do and press enter"/>
+            </form>
+        </div>
+        
+    </div>
+    <div class="todo-gather">
+        <ul id="todo-list">
+        </ul>
+    </div>
+    <div id="login-page">
+        <form id="login-form">
+          <p class="login-text">Enter your name please!</p>
+          <input class="login-input" required maxlength="15" type="text" placeholder="what is your name?"/>
+          <input type="submit" class="login-btn" value="Log In"/>
+        </form>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
