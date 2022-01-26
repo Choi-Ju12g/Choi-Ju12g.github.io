@@ -1,3 +1,24 @@
+const colors = [
+    "#ef5777",
+    "#575fcf",
+    "#4bcffa",
+    "#34e7e4",
+    "#0be881",
+    "#f53b57",
+    "#3c40c6",
+    "#0fbcf9",
+    "#00d8d6",
+    "#05c46b",
+    "#ffc048",
+    "#ffdd59",
+    "#ff5e57",
+    "#d2dae2",
+    "#485460",
+    "#ffa801",
+    "#ffd32a",
+    "#ff3f34"
+  ];
+
 const toDoForm = document.querySelector("#todo-form");
 const toDolist = document.querySelector("#todo-list");
 const toDoInput = toDoForm.querySelector("input");
@@ -32,6 +53,10 @@ function panitToDo(newToDo){
     button.addEventListener("click",deleteTodo);
     li.appendChild(span);
     li.appendChild(button);
+    (function changeBackgroundColor(){
+        const randomNum = Math.floor(Math.random()*colors.length);
+        li.style.background = colors[randomNum];
+    })()
     toDolist.appendChild(li);
 }
 
