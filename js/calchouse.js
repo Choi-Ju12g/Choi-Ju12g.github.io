@@ -88,9 +88,9 @@ function calc(){
   console.warn('무브 계산', u_total)
   const result = document.querySelector('#result')
   result.innerText = 
-  `원래 집 비용 : ${org_total}
-  이사 집 비용 : ${u_total}
-  비용 차: ${calcMove(org_total, u_total)}`
+'원래 집 비용 : ' + org_total +
+'\n이사 집 비용 : ' + u_total +
+'\n비용 차: ' + calcMove(org_total, u_total)
 }
 
 function calcHouse(house, isNew){
