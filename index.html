@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,4 +47,54 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
 </body>
-</html>
+</html> -->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>전세집 계산기</title>
+    </head>
+    <body>
+        <form class="origin_house">
+            <label for="전세가">전세가 :</label>
+            <input type="text" id="a" name="전세가", value="14860"><br><br>
+            <label for="교통비">교통비:</label>
+            <input type="text" id="b" name="교통비" value="0"><br><br>
+            <label for="이자">이자:</label>
+            <input type="text" id="c" name="이자" value="2.5"><br><br>
+            <label for="관리비/월세">관리비/월세:</label>
+            <input type="text" id="d" name="관리비/월세" value="22"><br><br>
+            <label for="e">보증보험 이율:</label>
+            <select id="e" name="보증보험/전세권설정">
+                <option selected value="hug">hug</option>
+                <option value="hf">hf</option>
+                <option value="jsg">jsg</option>
+            </select><br><br>
+        </form>
+        <br><br>
+        <form class="new_house">
+            <label for="전세가">전세가 :</label>
+            <input type="text" id="a2" name="전세가"><br><br>
+            <label for="교통비">교통비:</label>
+            <input type="text" id="b2" name="교통비"><br><br>
+            <label for="이자">이자:</label>
+            <input type="text" id="c2" name="이자"><br><br>
+            <label for="관리비/월세">관리비/월세:</label>
+            <input type="text" id="d2" name="관리비/월세"><br><br>
+            <label for="e">보증보험 이율:</label>
+            <select id="e2" name="보증보험/전세권설정">
+                <option value="hug">hug</option>
+                <option value="hf">hf</option>
+                <option value="jsg">jsg</option>
+            </select><br><br>
+            <br><br>
+        </form>
+        <input id='calc'type ="button" value="계산"></input>
+        <div id="result"></div>
+
+        <script src="js/houseCalc.js"></script>
+    </body>
+</html>`
